@@ -25,7 +25,7 @@ long unsigned int lowIn;
 
 //the amount of milliseconds the sensor has to be low 
 //before we assume all motion has stopped
-long unsigned int pause = 180000;  //delay on time about 3 min.
+long unsigned int pause = 300000;  //delay on time about 5 min.
 
 boolean lockLow = true;
 boolean takeLowTime;  
@@ -38,7 +38,7 @@ int ledPin = 13;  //indicate sensing from PIR sensor
 
 //SETUP
 void setup(){
-  Serial.begin(9600);
+  Serial.begin(115200);
   pinMode(pirPin, INPUT);
   pinMode(ryPin, OUTPUT);
   pinMode(disPin, OUTPUT);
